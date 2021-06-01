@@ -48,7 +48,7 @@ features                                  :
     fontawesome_icon_name                 : calendar-alt
 
   - title                                 : Customizable Schedules
-    description                           : Schedule tasks by day of the week, day of the month, on a daily/weekly/monthly interval while on a specific day of the week (Every month on sunday...)
+    description                           : Schedule tasks by day of the week or month, on a daily/weekly/monthly, even while on a specific day of the week (Every month on Sunday...)
     fontawesome_icon_name                 : clock
 
   - title                                 : Tons of Features
@@ -87,7 +87,7 @@ app_description_color                     : "#ffffff"
 feature_title_color                       : "#000000"
 feature_text_color                        : "#666666"
 
-feature_icons_foreground_color            : "#1d63ea"
+feature_icons_foreground_color            : "#FB6376"
 feature_icons_background_color            : "#e6e6e6"
 
 social_icons_foreground_color             : "#666666"
