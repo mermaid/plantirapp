@@ -60,9 +60,13 @@
 		document.getElementById('colorButton').onclick = function() {
 			if (~document.body.className.indexOf('alternate')) {
 				document.body.className = document.body.className.replace('alternate', '')
+				document.querySelector('.screenvideo source').src = '/assets/videos/screen-recording.mp4'
 			} else {
 				document.body.className += ' alternate'
+				document.querySelector('.screenvideo source').src = '/assets/videos/screen-recording-alternate.mp4'
 			}
+			
+			document.querySelector('.screenvideo').load()
 		}
 	</script>
 </header>

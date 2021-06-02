@@ -61,9 +61,13 @@
 		document.getElementById('colorButton').onclick = function() {
 			if (~document.body.className.indexOf('alternate')) {
 				document.body.className = document.body.className.replace('alternate', '')
+				document.querySelector('.screenvideo source').src = '/assets/videos/screen-recording.mp4'
 			} else {
 				document.body.className += ' alternate'
+				document.querySelector('.screenvideo source').src = '/assets/videos/screen-recording-alternate.mp4'
 			}
+			
+			document.querySelector('.screenvideo').load()
 		}
 	</script>
 </header>
@@ -75,14 +79,15 @@
                             </clipPath>
                         </svg>
 
-                        <div class="videoContainer hidden">
-                            <video class="screenvideo" autoplay="autoplay" controls="controls">
+                        <div class="videoContainer">
+                            <video class="screenvideo" autoplay loop muted playsinline>
+                                <source src="/assets/videos/screen-recording.mp4" type="video/mp4">'
                             </video>
                         </div>  
                         
                         <img class="iphoneScreen hidden" src="" alt="">
 
-                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+                        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 
     
@@ -101,26 +106,6 @@
 
     
 
-    
-
-    
-        <script>
-            $(function() {
-                $(".iphoneScreen").attr('src', '/assets/screenshot/yourscreenshot-old.png');
-                $(".iphoneScreen").removeClass("hidden");
-                console.log("/assets/screenshot/yourscreenshot-old.png");
-            });
-        </script>
-    
-
-    
-        <script>
-            $(function() {
-                $(".iphoneScreen").attr('src', '/assets/screenshot/yourscreenshot.png');
-                $(".iphoneScreen").removeClass("hidden");
-                console.log("/assets/screenshot/yourscreenshot.png");
-            });
-        </script>
     
 
     
@@ -129,6 +114,41 @@
 
     
         
+            <script>
+                $(function() {
+                    $(".iphoneScreen").addClass("hidden");
+                    console.log("remove screenshot");
+                });
+            </script>
+        
+        
+            <script>
+                $(function() {
+                    $(".videoContainer").removeClass("hidden");
+                    $(".screenvideo").append('<source src="/assets/videos/screen-recording-alternate.mp4" type="video/mp4">');
+                    console.log("/assets/videos/screen-recording-alternate.mp4");
+                });
+            </script>
+        
+    
+
+    
+        
+            <script>
+                $(function() {
+                    $(".iphoneScreen").addClass("hidden");
+                    console.log("remove screenshot");
+                });
+            </script>
+        
+        
+            <script>
+                $(function() {
+                    $(".videoContainer").removeClass("hidden");
+                    $(".screenvideo").append('<source src="/assets/videos/screen-recording.mp4" type="video/mp4">');
+                    console.log("/assets/videos/screen-recording.mp4");
+                });
+            </script>
         
     
 
@@ -254,7 +274,7 @@
     
 
     
-
+ -->
 
                     </div>
                     <div class="appInfo">
@@ -286,7 +306,7 @@
                         </div>
                         <div class="downloadButtonsContainer">
                             
-                            <a class="appStoreLink" href=""><img class="appStore" src="assets/appstore-white.png"></a>
+                            <a class="appStoreLink" href=""><img class="appStore" src="assets/appstore.png"></a>
                         </div>
                     </div>
                     <div class="features">

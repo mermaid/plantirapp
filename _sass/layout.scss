@@ -1,9 +1,5 @@
 .alternate .imageWrapper {
-	background-color: rgba($image-overlay-color-alternate, $image-overlay-transparency-alternate)
-		// linear-gradient(rgba($image-overlay-color-alternate, $image-overlay-transparency-alternate)
-		// rgba($image-overlay-color-alternate, $image-overlay-transparency-alternate), 
-		// rgba($image-overlay-color-alternate, $image-overlay-transparency-alternate)
-		// 	);
+	background-color: rgba($image-overlay-color-alternate, $image-overlay-transparency-alternate);
 }
 
 .imageWrapper {					// Sets the background image in the header area
@@ -13,10 +9,6 @@
 	transition: background-color .2s;
 
 	background-color: rgba($image-overlay-color, $image-overlay-transparency);
-		// linear-gradient(
-		// rgba($image-overlay-color, $image-overlay-transparency), 
-		// rgba($image-overlay-color, $image-overlay-transparency)
-		//    );
 
 	border-radius: 0px 0px 40px 40px;
 }
@@ -191,7 +183,6 @@ header {
 		padding-top: 100px;
 		padding-bottom: 100px;
 		margin-top: -60px;
-		justify-content: flex-start;
 	}	
 	
 } 
@@ -316,26 +307,6 @@ nav > ul li a:active {
 	display: flex;
 }
 
-// @media only screen and (max-width: 768px) {
-
-// 	// .appNamePriceContainer {
-// 	// 	width: 100%;
-// 	// 	margin-left: 0px;
-// 	// 	align-items: center;
-// 	// 	justify-content: center;
-// 	// }
-
-// 	.appName {
-// 		margin-top: 30px;
-// 		text-align: center;
-// 	}
-	
-// 	.appPrice {
-// 		margin-top: 13px;
-// 		text-align: center;
-// 	}
-	
-// } 
 
 .appDescriptionContainer {
 	font-size: 2.5rem;
@@ -520,6 +491,7 @@ nav > ul li a:active {
 .alternate .iconTop {
 	color: $feature-icons-foreground-color-alternate;
 }
+
 .iconTop {
 	color: $feature-icons-foreground-color;
 	transition: color .2s;
