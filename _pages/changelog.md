@@ -11,6 +11,11 @@ Here we go again with another update!
 
 New Features:
 - Added the ability to schedule interval tasks for a specific day of the week (ex. Every 2 weeks on Sunday)
+- Tasks are now sorted when viewing them in a plant view
+
+Bug Fixes
+- Fixed a bug where the date header in the schedule tab could sometimes be in the incorrect location
+- Fixed a bug where the launch screen would sometimes get stretched
 
 <br>
 
