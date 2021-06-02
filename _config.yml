@@ -10,14 +10,18 @@ presskit_download_link                    : /presskit.zip          # Enter a lin
                                                                                       # Or upload your press kit file to assets and set path accordingly (e.g. "assets/your_press_kit.zip").
 
 app_icon                                  : # assets/appicon.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
-app_name                                  :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
+app_name                                  :                                          # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_price                                 :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_description                           : Plantir is a plant tracking and reminder app to help you take care of your plants :)
+
+
+app_store_screenshot                      : /assets/appstore-screenshot.png
 
 enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
 
 app_short_name                            : "Plantir"
-
+og_title                                  : "Plantir: Plant Care & Reminder"
+og_description                            : Track Tasks for your Plants
 
 # Information About Yourself
 your_name                                 : Cameron Holiman                                
@@ -74,6 +78,10 @@ topbar_title_color                        : "#ffffff"
 cover_overlay_color                       : "#FB6376"
 cover_overlay_transparency                : 0.8
 
+# cover_image                               : assets/headerimage.png                    # Replace with alternative image path or image URL.
+cover_overlay_color_alternate             : "#263E0F"
+cover_overlay_transparency_alternate      : 0.8
+
 device_color                              : white                                     # Set to: blue, black, yellow, coral or white.
 
 body_background_color                     : "#ffffff"
@@ -98,7 +106,8 @@ social_icons_background_color             : "#e6e6e6"
 
 footer_text_color                         : "#666666"
 
-
+video_file                                : "/assets/videos/screen-recording.mp4"
+video_file_alternate                      : "/assets/videos/screen-recording-alternate.mp4"
 
 
 destination: docs/

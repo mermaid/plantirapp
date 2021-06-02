@@ -16,8 +16,9 @@
                             </clipPath>
                         </svg>
 
-                        <div class="videoContainer hidden">
-                            <video class="screenvideo" autoplay="autoplay" controls="controls">
+                        <div class="videoContainer">
+                            <video class="screenvideo" autoplay loop muted playsinline>
+                                <source src="{{ site.video_file }}" type="video/mp4">'
                             </video>
                         </div>  
                         
@@ -57,7 +58,7 @@
                             {% if site.playstore_link %}
                                 <a class="playStoreLink" href="{{site.playstore_link}}"><img class="playStore" src="assets/playstore.png"></a>
                             {% endif %}
-                            <a class="appStoreLink" href="{{site.appstore_link}}"><img class="appStore" src="assets/appstore-white.png"></a>
+                            <a class="appStoreLink" href="{{site.appstore_link}}"><img class="appStore" src="assets/appstore.png"></a>
                         </div>
                     </div>
                     {% include features.html %}
