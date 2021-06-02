@@ -24,8 +24,14 @@ $header_transparency: {{ site.topbar_transparency }};
 $image-overlay-color: {{ site.cover_overlay_color }};
 $image-overlay-transparency: {{ site.cover_overlay_transparency }};
 
+$image-overlay-color-alternate: {{ site.cover_overlay_color_alternate }};
+$image-overlay-transparency-alternate: {{ site.cover_overlay_transparency_alternate }};
+
 $feature-icons-foreground-color: {{ site.feature_icons_foreground_color }};
 $feature-icons-background-color: {{ site.feature_icons_background_color }};
+
+$feature-icons-foreground-color-alternate: {{ site.feature_icons_foreground_color_alternate }};
+$feature-icons-background-color-alternate: {{ site.feature_icons_background_color_alternate }};
 
 $social-icons-foreground-color: {{ site.social_icons_foreground_color }};
 $social-icons-background-color: {{ site.social_icons_background_color }};

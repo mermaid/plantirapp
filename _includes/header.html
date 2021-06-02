@@ -27,6 +27,16 @@
 			{% if site.presskit_download_link %}
 				<li><a href="{{ site.presskit_download_link }}">Press Kit</a></li>
 			{% endif %}
+				<li><button id="colorButton"></button></li>
 		</ul>
 	</nav>
+	<script>
+		document.getElementById('colorButton').onclick = function() {
+			if (~document.body.className.indexOf('alternate')) {
+				document.body.className = document.body.className.replace('alternate', '')
+			} else {
+				document.body.className += ' alternate'
+			}
+		}
+	</script>
 </header>

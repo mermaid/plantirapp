@@ -51,10 +51,20 @@
 				
 			
 			
-				<li><a href="https://ohcrop.app/assets/presskit.zip">Press Kit</a></li>
+				<li><a href="/presskit.zip">Press Kit</a></li>
 			
+				<li><button id="colorButton"></button></li>
 		</ul>
 	</nav>
+	<script>
+		document.getElementById('colorButton').onclick = function() {
+			if (~document.body.className.indexOf('alternate')) {
+				document.body.className = document.body.className.replace('alternate', '')
+			} else {
+				document.body.className += ' alternate'
+			}
+		}
+	</script>
 </header>
             <article class="page markdown-body">
                 <h1 id="changelog">Changelog</h1>
