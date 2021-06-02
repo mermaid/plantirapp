@@ -98,7 +98,7 @@ footer_text_color                         : "#666666"
 
 
 
-
+destination: docs/
 
 ####################################################
 ### Jekyll Configuration. No need to touch this. ###
