@@ -5,6 +5,12 @@ include_in_header: true
 ---
 
 ### `Latest`
+## **Version 1.1.4**
+#### Jul 30, 2021
+Fixes a bug where notifications would sometimes stop or not get scheduled correctly.
+
+<br>
+
 ## **Version 1.1.3** 
 #### Jun 30, 2021
 This update focuses on making improvements and fixing bugs with notifications
